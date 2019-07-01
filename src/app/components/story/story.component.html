@@ -1,0 +1,16 @@
+<mat-card class="story-card">
+  <mat-card-content>
+    <p *ngFor="let story of pastStory">
+      {{story}}
+      <br>
+    </p>
+    <p>
+      {{sPage?.storyText}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions fxLayoutAlign="row" fxLayoutAlign="space-around center">
+    <button mat-raised-button *ngFor="let link of sPage?.pageLinks" (click)="updatePage(link.page)">
+      {{link.buttonText}}
+    </button>
+  </mat-card-actions>
+</mat-card>
