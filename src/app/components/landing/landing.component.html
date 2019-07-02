@@ -1,7 +1,10 @@
 <mat-toolbar>
     <mat-toolbar-row fxLayoutAlign="row" fxLayoutAlign="space-around center" class="welcome-bar">
-        <div>Welcome To Meirsul</div>
+        <a mat-raised-button routerLink="/">Menu</a>
+        <button (click)="storyService.getCode()"></button>
     </mat-toolbar-row>
 </mat-toolbar>
 
-<app-story page="intro_page"></app-story>
+<div [ngClass.gt-sm]="'content'">
+    <router-outlet></router-outlet>
+</div>
