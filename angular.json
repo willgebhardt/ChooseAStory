@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-angular-site": {
+    "choose-a-story": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-angular-site",
+            "outputPath": "dist/choose-a-story",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-angular-site:build"
+            "browserTarget": "choose-a-story:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-angular-site:build:production"
+              "browserTarget": "choose-a-story:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-angular-site:build"
+            "browserTarget": "choose-a-story:build"
           }
         },
         "lint": {
@@ -92,5 +92,5 @@
       }
     }
   },
-  "defaultProject": "my-angular-site"
+  "defaultProject": "choose-a-story"
 }
