@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-content>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+    <button mat-raised-button [matMenuTriggerFor]="menu">Choose a Story</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item *ngFor="let story of stories" (click)="setStory(story)">{{story}}</button>
+    </mat-menu>
+
+    <button mat-raised-button [disabled]="!storyService.story" (click)="loadStoryStart()">Start {{storyService.story}} from the beginning</button>
+
+    </div>
+  </mat-card-content>
+</mat-card>
