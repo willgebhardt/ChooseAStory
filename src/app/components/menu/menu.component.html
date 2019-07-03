@@ -1,11 +1,14 @@
 <mat-card>
-  <mat-card-content>
+  <mat-card-content fxLayout="column" fxLayoutAlign="space-around">
     <div fxLayout="row" fxLayoutAlign="space-around center">
-    <button mat-raised-button [matMenuTriggerFor]="menu">Choose a Story</button>
+      <button mat-raised-button class="trigger" [matMenuTriggerFor]="menu">Choose a Story</button>
+    </div>
     <mat-menu #menu="matMenu">
       <button mat-menu-item *ngFor="let story of stories" (click)="setStory(story)">{{story}}</button>
     </mat-menu>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
 
+    <button mat-raised-button [disabled]="!storyService.story" (click)="loadStoryCode()">Start {{storyService.story}} from code</button>
     <button mat-raised-button [disabled]="!storyService.story" (click)="loadStoryStart()">Start {{storyService.story}} from the beginning</button>
 
     </div>

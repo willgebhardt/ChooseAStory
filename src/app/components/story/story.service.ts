@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-// import {Buffer} from 'buffer';
 
 
 @Injectable({
@@ -11,6 +10,9 @@ export class StoryService {
 
   pastStory: string[] = [];
   sPage: storyPage = new storyPage();
+
+  storyCode: string;
+  pageCode: string;
 
   pages: string[] = [];
 
@@ -26,12 +28,15 @@ export class StoryService {
           this.pastStory.push(this.sPage.storyText);
           this.sPage.storyText = value['storyText'];
         }
-    )
+    );
+    this.storyCode = btoa(JSON.stringify(this.pages));
+    this.pageCode = btoa(JSON.stringify([newPage]))
   }
 
-  getCode(){
-    // console.log(Buffer.from(JSON.stringify(this.pages)).toString("base64"));
-
+  refresh(){
+    this.sPage = new storyPage();
+    this.pages = [];
+    this.pastStory = [];
   }
 }
 

@@ -8,9 +8,13 @@
       {{storyService?.sPage?.storyText}}
     </p>
   </mat-card-content>
-  <mat-card-actions fxLayoutAlign="row" fxLayoutAlign="space-around center">
-    <button mat-raised-button *ngFor="let link of storyService?.sPage?.pageLinks" (click)="storyService.nextPage(link.page)">
-      {{link.buttonText}}
-    </button>
+  <mat-card-actions fxLayout="column">
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <button mat-raised-button *ngFor="let link of storyService?.sPage?.pageLinks" (click)="storyService.nextPage(link.page)">
+        {{link.buttonText}}
+      </button>
+    </div>
+    <button mat-button class="code-button" ngxClipboard [cbContent]="storyService.storyCode"> Copy Story Code</button>
   </mat-card-actions>
 </mat-card>
+
