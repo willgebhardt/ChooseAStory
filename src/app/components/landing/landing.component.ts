@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {StoryService} from '../story/story.service';
+import {StoryService} from '../story.service';
 
 @Component({
   selector: 'app-landing',

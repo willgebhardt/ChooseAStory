@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {StoryService} from '../story/story.service';
+import {StoryService} from '../story.service';
 import {Router} from '@angular/router';
 import {MatDialog} from '@angular/material';
 import {StoryCodeDialogComponent} from '../story-code-dialog/story-code-dialog.component';

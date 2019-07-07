@@ -4,8 +4,8 @@
       {{page}}
       <br>
     </p>
-    <p>
-      {{storyService?.sPage?.storyText}}
+    <p *ngFor="let part of storyService?.sPage?.storyText">
+      {{part}}
     </p>
   </mat-card-content>
   <mat-card-actions fxLayout="column">

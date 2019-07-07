@@ -25,7 +25,7 @@ export class StoryService {
           this.sPage.pageLinks = [];
           for(const link of value['pageLinks'])
             this.sPage.pageLinks.push(new pageLink(link.buttonText, link.page));
-          this.pastStory.push(this.sPage.storyText);
+          this.pastStory = this.pastStory.concat(this.sPage.storyText);
           this.sPage.storyText = value['storyText'];
         }
     );
@@ -53,11 +53,11 @@ export class pageLink {
 
 export class storyPage {
   pageLinks: pageLink[];
-  storyText: string;
+  storyText: string[];
 
   constructor() {
     this.pageLinks = [];
-    this.storyText = '';
+    this.storyText = [];
   }
 
 }
