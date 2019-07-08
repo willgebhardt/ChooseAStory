@@ -3,17 +3,28 @@
   "pageLinks": [
     {
       "buttonText": "Work in Space",
-      "page": "space_work"
+      "page": ""
     },
     {
       "buttonText": "Wait until you reach Merisul",
-      "page": "wait"
+      "page": ""
     }
   ],
-  "storyText": ["Not wanting to wait you hit the launch button and the countdown begins. You rush over to the pod and shortly there after it fires. You made it out of the ship's launch bay and are on your way down to the planet with the few supplies stocked in the pod and a hevily injured man. You look out the small window to see a large asteroid crash into the launch bay. Good thing you didn't stay to fiddle with the computer.",
-  "\"So what's your name?\" The man had shifted to be sitting upright. His face was rapidly loosing color and he looked like he was going to pass out again.",
-  "\"Oh, my name is Dr. Cara Waters, and who might you be?\"",
-  "\"Name's Xander Ross but that won't matter soon,\" he gestured to the bar sticking out of his chest.",
-  "\"I am sure we can find something to fix you up.\" You look around the pod and find the medical supplies. Looking inside you find some steralizing wipes, gauze, band-aids, suppiles for stitches and a whole roll of paper towels. It looks like you will be entering the atmosphere soon meaning the ride will get rough. Do you think there is enough time to make it to the ground or should you work in the pod?"
+  "storyText": ["Looking at the piece of rebar protruding from his shoulder you decide that time is not on your side. The man in front of you has passed out and his breathing is starting to slow. You grab the piece of rebar pull until it can no longer be seen in front of him and go to work on patching the wound. As you reach for a sterilizing wipe the whole pod shakes. With a quick glance out the window you can see that the pod has begun its decent into the atmosphere of Merisul. You work quickly patching up and layering as much fabric and gauze over the wound.",
+  "\"200 Miles till impact.\"",
+  "Okay 200 miles that is not a lot of time. You pull the remaining rebar out of the man's back and immediately put more pressure on this wound. The ship started shaking again. This time it did not seem like it was going stop.",
+  "\"100 Miles starting landing procedures\"",
+  "That's good you think to yourself as you finish basically all the gauze. you clip the man back in to his seat and take your own.",
+  "\"50 Miles\"",
+  "\"25 Miles\"",
+  "\"10 Miles\"",
+  "The pod had begun to slow, you look out the window and are greeted by a mountain very close to the pod.",
+  "\"5 Miles\"",
+  "You feel the pod come to a stop briefly. You reach for your belt ready to open the door when you hear the rip of the parachute. Then the drop. The pod started falling rapidly bouncing down the side of the mountain. As the pod rolls something hits you in the head and you black out.",
+  "...",
+  "\"Good you are awake.\"",
+  "As you come too you see Xandar sitting in the pod next to you. A slight breeze drifts across your face. Turning your head you see that the door to the pod is open.",
+  "\"We are stuck on the side of this mountain, with no clear way down. Also thanks for patching me up.",
+  "You manage to get up a \"You're Welcome\" out before having to stop and hold your head.
   ]
 }
