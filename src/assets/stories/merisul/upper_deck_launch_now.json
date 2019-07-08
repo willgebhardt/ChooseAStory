@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Upper Deck",
+  "pageLinks": [
+    {
+      "buttonText": "Work in Space",
+      "page": "space_work"
+    },
+    {
+      "buttonText": "Wait until you reach Merisul",
+      "page": "wait"
+    }
+  ],
+  "storyText": ["Not wanting to wait you hit the launch button and the countdown begins. You rush over to the pod and shortly there after it fires. You made it out of the ship's launch bay and are on your way down to the planet with the few supplies stocked in the pod and a hevily injured man. You look out the small window to see a large asteroid crash into the launch bay. Good thing you didn't stay to fiddle with the computer.",
+  "\"So what's your name?\" The man had shifted to be sitting upright. His face was rapidly loosing color and he looked like he was going to pass out again.",
+  "\"Oh, my name is Dr. Cara Waters, and who might you be?\"",
+  "\"Name's Xander Ross but that won't matter soon,\" he gestured to the bar sticking out of his chest.",
+  "\"I am sure we can find something to fix you up.\" You look around the pod and find the medical supplies. Looking inside you find some steralizing wipes, gauze, band-aids, suppiles for stitches and a whole roll of paper towels. It looks like you will be entering the atmosphere soon meaning the ride will get rough. Do you think there is enough time to make it to the ground or should you work in the pod?"
+  ]
+}
