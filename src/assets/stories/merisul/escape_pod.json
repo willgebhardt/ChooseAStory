@@ -1,0 +1,33 @@
+{
+  "pageLinks": [
+    {
+      "buttonText": "Jungle",
+      "page": "jungle/start"
+    },
+    {
+      "buttonText": "Plains",
+      "page": "plaing_start"
+    },
+    {
+      "buttonText": "Temperate Islands",
+      "page": "islands_start"
+    },
+    {
+      "buttonText": "Mountains",
+      "page": "mountain_start"
+    },
+    {
+      "buttonText": "Coast",
+      "page": "coast_start"
+
+    }
+
+  ],
+  "storyText": ["Not wanting to tempt fate you dash down the hallway to your escape pod. Along the way the ship continues to shake and be hit with rocks and other debris. Remembering the path that was drilled into you before the mission began, you find the escape pods with ease. All but one of the pods has been launched and the last one's navigation is on the computer in front of you.",
+  "On the screen you see a few locations that the pods can launch towards. The different areas the pod will launch to are: ", 
+  "Jungle: Preliminary reports found lush foliage and a humid climate. The size of the jungle is unknown as scanner could not penetrate the thick foliage. Dangers are unknown so proceed at your own risk",
+  "Plains: Preliminary reports found many tall thin trees scattered across this open terrain. Scanners did not pick up on much life living there. Dangers include, starvation, dehydration, and scorching temperatures.",
+  "Temperate Islands: Preliminary reports found a chain of small tropical islands of the southern coast of Nuschend. There should be an abundance of wild plants and animals that can be used for food. Dangers include unknown weather from the ocean, and wild animals. ",
+  "Mountains: Preliminary reports found life in the caves of the Grupa Mountains. These snow toped peaks should provide both water and food. Dangers include the enviroment and possible animals.",
+  "Coast: Preliminary reports large amounts of aquatic creatures and small foliage along the northern coast of Feraz. Dangers are unknown as any number of the creatures could be dangerous and there has been no further scans of the inland region."]
+}
