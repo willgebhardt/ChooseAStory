@@ -9,10 +9,13 @@
     </p>
   </mat-card-content>
   <mat-card-actions fxLayout="column">
-    <div fxLayout="row" fxLayoutAlign="space-around center">
+    <div fxLayout="row" fxLayoutAlign="space-around center"  *ngIf="!storyService?.storyEnd">
       <button mat-raised-button *ngFor="let link of storyService?.sPage?.pageLinks" (click)="storyService.nextPage(link.page)">
         {{link.buttonText}}
       </button>
+    </div>
+    <div *ngIf="storyService?.storyEnd" fxLayout="row" fxLayoutAlign="space-around center">
+      <a mat-raised-button routerLink="/">Return to Menu</a>
     </div>
     <button mat-button class="code-button" ngxClipboard [cbContent]="storyService.storyCode"> Copy Story Code</button>
   </mat-card-actions>

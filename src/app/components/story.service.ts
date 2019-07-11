@@ -16,6 +16,8 @@ export class StoryService {
 
   pages: string[] = [];
 
+  storyEnd = false;
+
   constructor(private httpService: HttpClient) { }
 
   nextPage(newPage: string){
@@ -25,6 +27,7 @@ export class StoryService {
           this.sPage.pageLinks = [];
           for(const link of value['pageLinks'])
             this.sPage.pageLinks.push(new pageLink(link.buttonText, link.page));
+          this.storyEnd = this.sPage.pageLinks.length === 0;
           this.pastStory = this.pastStory.concat(this.sPage.storyText);
           this.sPage.storyText = value['storyText'];
         }

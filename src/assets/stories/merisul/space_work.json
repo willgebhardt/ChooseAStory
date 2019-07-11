@@ -1,20 +1,13 @@
 {
   "pageTitle": "Upper Deck",
   "pageLinks": [
-    {
-      "buttonText": "Work in Space",
-      "page": ""
-    },
-    {
-      "buttonText": "Wait until you reach Merisul",
-      "page": ""
-    }
+    
   ],
   "storyText": ["Looking at the piece of rebar protruding from his shoulder you decide that time is not on your side. The man in front of you has passed out and his breathing is starting to slow. You grab the piece of rebar pull until it can no longer be seen in front of him and go to work on patching the wound. As you reach for a sterilizing wipe the whole pod shakes. With a quick glance out the window you can see that the pod has begun its decent into the atmosphere of Merisul. You work quickly patching up and layering as much fabric and gauze over the wound.",
   "\"200 Miles till impact.\"",
   "Okay 200 miles that is not a lot of time. You pull the remaining rebar out of the man's back and immediately put more pressure on this wound. The ship started shaking again. This time it did not seem like it was going stop.",
   "\"100 Miles starting landing procedures\"",
-  "That's good you think to yourself as you finish basically all the gauze. you clip the man back in to his seat and take your own.",
+  "That's good you think to yourself as you finish using basically all the gauze. you clip the man back in to his seat and take your own.",
   "\"50 Miles\"",
   "\"25 Miles\"",
   "\"10 Miles\"",
@@ -25,6 +18,6 @@
   "\"Good you are awake.\"",
   "As you come too you see Xandar sitting in the pod next to you. A slight breeze drifts across your face. Turning your head you see that the door to the pod is open.",
   "\"We are stuck on the side of this mountain, with no clear way down. Also thanks for patching me up.",
-  "You manage to get up a \"You're Welcome\" out before having to stop and hold your head.
+  "You manage to get up a \"You're Welcome\" out before having to stop and hold your head."
   ]
 }
