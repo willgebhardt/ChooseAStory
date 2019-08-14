@@ -20,6 +20,8 @@ import {MenuComponent} from './components/menu/menu.component';
 import {ClipboardModule} from 'ngx-clipboard';
 import { StoryCodeDialogComponent } from './components/story-code-dialog/story-code-dialog.component';
 import {FormsModule} from '@angular/forms';
+import { PageMakerComponent } from './components/creation/page-maker/page-maker.component';
+
 
 @NgModule({
     declarations: [
@@ -27,7 +29,8 @@ import {FormsModule} from '@angular/forms';
         LandingComponent,
         StoryComponent,
         MenuComponent,
-        StoryCodeDialogComponent
+        StoryCodeDialogComponent,
+        PageMakerComponent,
     ],
     imports: [
         BrowserModule,

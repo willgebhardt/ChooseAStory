@@ -6,19 +6,19 @@
     },
     {
       "buttonText": "Plains",
-      "page": "plaing_start"
+      "page": "plains/start"
     },
     {
       "buttonText": "Temperate Islands",
-      "page": "islands_start"
+      "page": "islands/start"
     },
     {
       "buttonText": "Mountains",
-      "page": "mountain_start"
+      "page": "mountain/start"
     },
     {
       "buttonText": "Coast",
-      "page": "coast_start"
+      "page": "coast/start"
 
     }
 

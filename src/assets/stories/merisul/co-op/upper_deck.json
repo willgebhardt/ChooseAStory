@@ -3,7 +3,7 @@
   "pageLinks": [
     {
       "buttonText": "Launch Now",
-      "page": "upper_deck_launch_now"
+      "page": "co-op/upper_deck_launch_now"
     },
     {
       "buttonText": "Reboot Computer",
