@@ -1,0 +1,32 @@
+{
+  "pageLinks": [
+    {
+      "buttonText": "Head South",
+      "page": "coast/to_land"
+    },
+    {
+      "buttonText": "Head North",
+      "page": "coast/glowpods"
+    },
+    {
+      "buttonText": "Head West",
+      "page": "coast/along_the_coast"
+    }
+  ],
+  "storyText": [
+    "You decide that you will be in safest among the coast and set the pod's trajectory. As you climb into your pod more crashes can be heard above you. The final sound you hear as the doors close in a blood curtailing scream, then silence. The doors close and the pod fires. It was standard procedure for the pod to remain in space for a short amount of time before the decent to coordinate with other pods. You check the computer; there are no other pods on your radar. It looks like you will be alone on this journey. As your pod moved swiftly through space you get a chance to look out over the huge planet in front of you. This is to be your new home for a long time.",
+    "\"Beginning Decent into Atmosphere.\" the pods computer changes course and starts the decent towards the coast.",
+    "\"200 Kilometers till impact\"",
+    "\"100 Kilometers starting landing procedures\"",
+    "\"50 Kilometers\"",
+    "\"25 Kilometers\"",
+    "\"10 Kilometers\"",
+    "\"5 Kilometers\"",
+    "\"2 Kilometers deploying landing gear\" You hear a mechanical whirling from outside the pod. When you look out the window you see the sun setting in the distance, illuminating the sky with a vibrant purple light.",
+    "*Thud* \"Arrived at the coast.\" The door to the pod opens and water rushes into the pod filling it to your ankles. As the pod door complete opens you look out across a vast open expanse of water. You take a few steps out of your pod looking for land but you can not see any in the dim light. When you go back into the pod you rummage around looking for something to eat. You find some packaged food that should be enough to get you through about a day. Grabbing a protein bar, and walking back outside you see a glow coming from your left. Not wanting to venture to far from your pod you climb on top to see if you can make out what in the water is producing the glow.",
+    "By the time you make it up your pod the whole horizon is illuminated with a yellow glow. Starting no more then 25 meters away a huge glowing sphere was sticking out the surface of the water. From what you can tell it was anchored to something below the surface. Laying down on the top of the pod you look up at the sky. Being uninhabited by advanced life the sky was void of light man made light pollution. As you count the stars your eyes get heavy and eventually close.",
+    "A screech over head jolts you awake. You whip your head around looking for the source of the sound. A large winged creature circles around the now clear field of spheres. As you watch it circle it slowly gets closer and closer to the water until it dives under and come up with something in its claws. After it grabs its meal it turns and flies towards the pod. Staying close to the water the creature zips past you and heads off into the distance. After stretching a bit from sleeping on the hard top of the pod you climb down and hunt around for more food. As you rummage through the cabinets in the pod a beeping starts up from the pod's computer. Rushing over to the console you see that someone has activated the homing beacon on the main ship. It would take about a week for the beacon to reach the closest launch point and then about another month or so before they would be able to get here. So you have under two months to make it back to the ship.",
+    "You grab a backpack, a radio, the rest of the food, and portable beacon. Before heading out you make sure you can get the ships beacon and the pod's beacon to show on the portable beacon. The pod's it going in and out but the one that should be coming from the main ship is strong and constant. Deciding that this was good enough you set out to find your way to the main ship.",
+    "You have a few ways you could go to try and get to the pod. The creature from earlier flew one way which would signify that land should be in that direction which would be due south. The beacon is showing the ship due west. The glowing spheres would be due north. You decide that walking east would make no sense. Which way do you go?"
+  ]
+}

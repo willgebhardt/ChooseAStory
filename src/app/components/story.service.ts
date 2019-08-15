@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {Page, PageLink} from './page';
 
 
 @Injectable({
@@ -9,7 +10,7 @@ export class StoryService {
   story: string;
 
   pastStory: string[] = [];
-  sPage: storyPage = new storyPage();
+  sPage: Page = new Page();
 
   storyCode: string;
   pageCode: string;
@@ -23,13 +24,11 @@ export class StoryService {
   nextPage(newPage: string){
     this.pages.push(newPage);
     this.httpService.get('./assets/stories/' + this.story + "/" + newPage + ".json").subscribe(
-        (value: storyPage) => {
-          this.sPage.pageLinks = [];
-          for(const link of value['pageLinks'])
-            this.sPage.pageLinks.push(new pageLink(link.buttonText, link.page));
-          this.storyEnd = this.sPage.pageLinks.length === 0;
+        (value: Page) => {
           this.pastStory = this.pastStory.concat(this.sPage.storyText);
-          this.sPage.storyText = value['storyText'];
+          this.sPage = value;
+          this.storyEnd = this.sPage.pageLinks.length === 0;
+
         }
     );
     this.storyCode = btoa(JSON.stringify(this.pages));
@@ -37,30 +36,8 @@ export class StoryService {
   }
 
   refresh(){
-    this.sPage = new storyPage();
+    this.sPage = new Page();
     this.pages = [];
     this.pastStory = [];
   }
-}
-
-export class pageLink {
-  buttonText: string;
-  page: string;
-
-
-  constructor(buttonText: string, page: string) {
-    this.buttonText = buttonText;
-    this.page = page;
-  }
-}
-
-export class storyPage {
-  pageLinks: pageLink[];
-  storyText: string[];
-
-  constructor() {
-    this.pageLinks = [];
-    this.storyText = [];
-  }
-
 }

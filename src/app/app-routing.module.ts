@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {LandingComponent} from './components/landing/landing.component';
 import {MenuComponent} from './components/menu/menu.component';
 import {StoryComponent} from './components/story/story.component';
+import {PageMakerComponent} from './components/creation/page-maker/page-maker.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,11 @@ const routes: Routes = [
         path: 'story',
         data: {title: 'Story'},
         component: StoryComponent
+      },
+      {
+        path: 'page-maker',
+        data: {title: 'Creation'},
+        component: PageMakerComponent
       }
     ]
   }
