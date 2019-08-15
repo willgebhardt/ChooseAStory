@@ -1,0 +1,25 @@
+<div fxLayout="column" fxLayoutAlign="stretch center" fxLayoutGap="30px">
+  <span>Button Editor</span>
+  <form [formGroup]="link" fxLayoutGap="25px" fxLayoutAlign="center center">
+    <mat-form-field appearance="outline">
+      <mat-label>Button Text</mat-label>
+      <input matInput formControlName="buttonText">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Destination</mat-label>
+      <input matInput formControlName="page">
+    </mat-form-field>
+  </form>
+  <ng-container *ngIf="data.allButtons.length > 1">
+    <span>Position of Button:</span>
+    <mat-radio-group [(ngModel)]="position" fxLayout="row" fxLayoutGap="25px">
+      <mat-radio-button *ngFor="let link of data.allButtons; let idx = index" [value]="idx">
+        {{idx + 1}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </ng-container>
+  <div fxLayoutGap="25px">
+    <button mat-raised-button (click)="dialogRef.close()">Cancel</button>
+    <button mat-raised-button (click)="submit()">Save</button>
+  </div>
+</div>

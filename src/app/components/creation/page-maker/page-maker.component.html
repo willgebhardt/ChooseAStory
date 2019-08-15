@@ -1,5 +1,44 @@
 <mat-card>
-  <mat-card-content>
+  <mat-card-content fxLayout="column" fxLayoutAlign="center stretch" fxLayoutGap="25px">
+    <form [formGroup]="pageForm" fxLayout="column" fxLayoutAlign="center center">
+      <mat-form-field appearance="outline">
+        <mat-label>Page Title</mat-label>
+        <input matInput placeholder="Page Title" type="text" formControlName="pageTitle">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="story-text">
+        <mat-label>Page Content</mat-label>
+        <textarea matInput placeholder="Page Content" formControlName="storyText" rows="30"></textarea>
+      </mat-form-field>
+    </form>
+    <div>
+      <button mat-raised-button (click)="addButton()">
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+          <mat-icon>add_circle</mat-icon>
+          <span>Add Link</span>
+        </div>
+      </button>
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="25px">
+        <div *ngFor="let link of pageForm.get('pageLinks').value; let i = index"
+             [matTooltip]="'Links to: ' + (link.page | pageLink: 'display')"
+             matTooltipPosition="below">
+          <button mat-raised-button (click)="edit(i)">
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
+              {{link.buttonText}}
+              <button mat-icon-button (click)="removeButton(i)">
+                <mat-icon>remove_circle</mat-icon>
+              </button>
+            </div>
+          </button>
 
+        </div>
+      </div>
+    </div>
   </mat-card-content>
+  <mat-card-actions fxLayout="row" fxLayoutGap="10px">
+    <button mat-raised-button (click)="save()">Export</button>
+    <div>
+      <button mat-raised-button><label for="file">Choose a page to continue</label></button>
+      <input fxHide type="file" id="file" accept=".json" (change)="load($event.target.files)">
+    </div>
+  </mat-card-actions>
 </mat-card>

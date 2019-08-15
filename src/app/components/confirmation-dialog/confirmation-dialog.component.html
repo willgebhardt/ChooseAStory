@@ -1,0 +1,14 @@
+<div fxLayoutGap="10px" fxLayout="column" fxLayoutAlign="space-around" class="page-content">
+  <div mat-dialog-title>
+    {{ data.title }}
+  </div>
+  <div class="page-content">
+    {{ data.content }}
+  </div>
+  <div fxLayoutGap="10px" fxLayout="row" fxLayoutAlign="end center">
+    <button mat-raised-button (click)="close()">Cancel</button>
+    <button *ngIf="data.acceptText" mat-raised-button (click)="accept()">
+      {{ data.acceptText }}
+    </button>
+  </div>
+</div>

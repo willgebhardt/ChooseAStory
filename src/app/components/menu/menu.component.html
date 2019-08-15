@@ -1,16 +1,36 @@
-<mat-card>
-  <mat-card-content fxLayout="column" fxLayoutAlign="space-around">
-    <div fxLayout="row" fxLayoutAlign="space-around center">
-      <button mat-raised-button class="trigger" [matMenuTriggerFor]="menu">Choose a Story</button>
-    </div>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item *ngFor="let story of stories" (click)="setStory(story)">{{story}}</button>
-    </mat-menu>
-    <div fxLayout="row" fxLayoutAlign="space-around center">
+<div fxLayout="column" fxLayoutGap="10vh">
+  <mat-card>
+    <mat-card-content fxLayout="column" fxLayoutAlign="space-around">
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+        <h2>Read A Story</h2>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+        <button mat-raised-button class="trigger" [matMenuTriggerFor]="menu">Choose a Story</button>
+      </div>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let story of stories" (click)="setStory(story)">{{story}}</button>
+      </mat-menu>
+      <div fxLayout="row" fxLayoutAlign="space-around center">
 
-    <button mat-raised-button [disabled]="!storyService.story" (click)="loadStoryCode()">Start {{storyService.story}} from code</button>
-    <button mat-raised-button [disabled]="!storyService.story" (click)="loadStoryStart()">Start {{storyService.story}} from the beginning</button>
+        <button mat-raised-button [disabled]="!storyService.story" (click)="loadStoryCode()">
+          Start {{storyService.story}} from code
+        </button>
+        <button mat-raised-button [disabled]="!storyService.story" (click)="loadStoryStart()">
+          Start {{storyService.story}} from the beginning
+        </button>
 
-    </div>
-  </mat-card-content>
-</mat-card>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-content fxLayout="column" fxLayoutAlign="space-around">
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+        <h2>Write A Story</h2>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+        <a mat-raised-button [routerLink]="'/page-maker'">Create a Page</a>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
